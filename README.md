@@ -1,4 +1,4 @@
-##VoiceScribe
+## VoiceScribe
 
 This is funny platformer made in godot engine to run on Linux Windows and web.
 Game is work in progress. For seeing latest "working build" you can go to vilchy.com/skryba
