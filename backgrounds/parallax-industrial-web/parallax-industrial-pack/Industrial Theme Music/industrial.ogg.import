@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/industrial.ogg-b7b370351a639e70ada2a03dd5dff2f2.oggstr"
+
+[deps]
+
+source_file="res://backgrounds/parallax-industrial-web/parallax-industrial-pack/Industrial Theme Music/industrial.ogg"
+dest_files=[ "res://.import/industrial.ogg-b7b370351a639e70ada2a03dd5dff2f2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

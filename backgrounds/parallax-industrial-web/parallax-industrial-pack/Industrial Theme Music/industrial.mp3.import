@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/industrial.mp3-3eb991e358000bdfb9987e27dc53222d.mp3str"
+
+[deps]
+
+source_file="res://backgrounds/parallax-industrial-web/parallax-industrial-pack/Industrial Theme Music/industrial.mp3"
+dest_files=[ "res://.import/industrial.mp3-3eb991e358000bdfb9987e27dc53222d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
