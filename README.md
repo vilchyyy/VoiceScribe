@@ -4,7 +4,7 @@ This is funny platformer made in godot engine to run on Linux, Windows and web.
 
 Feel free to make any commits. In house assets will be designed and integrated later into the project.
 
-Now I did a local multiplayer sketch but rewriting animated sprite to state machine.
+Now I made a local multiplayer sketch and currently rewriting animated sprite to state machine.
 
 Latest working build: vilchy.com/skryba.
 
