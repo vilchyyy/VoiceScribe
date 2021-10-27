@@ -4,7 +4,7 @@ export (int) var run_speed = 500
 export (int) var jump_speed = -1000
 export (int) var gravity = 2500
 onready var player_sprite = $Sprite
-onready var state_machine = $Sprit
+
 
 var velocity = Vector2()
 var jumping = false
@@ -12,9 +12,7 @@ var attacking = false
 var plyr_flip = false
 var hp = 20
 
-func play_anim(anim):
-	player_sprite.stop()
-	player_sprite.play(anim)
+	
 func get_input():
 	velocity.x = 0
 	var right = Input.is_action_pressed('ui_right2')
@@ -27,17 +25,11 @@ func get_input():
 		velocity.x += run_speed
 		if not attacking or not plyr_flip:
 			player_sprite.flip_h = false
-			$qAttack.set_scale(Vector2(1, 1))
-			$pAttack.set_scale(Vector2(1, 1))
 	elif left:
 		velocity.x -= run_speed
 		if not attacking or plyr_flip:
 			player_sprite.flip_h = true
-			$qAttack.set_scale(Vector2(-1, 1))
-			$pAttack.set_scale(Vector2(-1, 1))
-	elif is_on_floor() and not attacking and velocity.x == 0 and player_sprite.animation != "Take Hit":
-		#Idle
-		pass
+			
 	if jump and is_on_floor():
 		if not attacking:
 			#Jump
@@ -66,24 +58,6 @@ func _physics_process(delta):
 	if jumping and is_on_floor():
 		jumping = false
 	
-func _on_Sprite_animation_finished():
-	if velocity.y <-20:
-		#Jump
-		pass
-	elif velocity.y > 0 :
-		#Fall
-		pass
-	if player_sprite.animation == "qAttack" or "pAttack":
-		attacking = false
-		$qAttack/qAttack.disabled = true
-		$pAttack/pAttack.disabled = true
-		run_speed = 500
-
-func _on_Sprite_frame_changed():
-	if player_sprite.animation == "Attack2":
-		if player_sprite.frame == 4:
-			$pAttack/pAttack.disabled = false
-			
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("1dmg") or area.is_in_group("5dmg"):

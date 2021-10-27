@@ -59,48 +59,48 @@ atlas = ExtResource( 4 )
 region = Rect2( 0, 992, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 7 )
 region = Rect2( 0, 124, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 248, 119, 124 )
+region = Rect2( 0, 0, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 372, 119, 124 )
+region = Rect2( 0, 124, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 496, 119, 124 )
+region = Rect2( 0, 248, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 620, 119, 124 )
+region = Rect2( 0, 372, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 744, 119, 124 )
+region = Rect2( 0, 496, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 868, 119, 124 )
+region = Rect2( 0, 620, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 992, 119, 124 )
+region = Rect2( 0, 744, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 7 )
-region = Rect2( 0, 0, 119, 124 )
+atlas = ExtResource( 6 )
+region = Rect2( 0, 868, 119, 124 )
 
 [sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 7 )
-region = Rect2( 0, 124, 119, 124 )
+atlas = ExtResource( 6 )
+region = Rect2( 0, 992, 119, 124 )
 
 [sub_resource type="SpriteFrames" id=25]
 animations = [ {
@@ -109,14 +109,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
-"loop": false,
-"name": "death",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 23 ), SubResource( 24 ) ],
+"frames": [ SubResource( 14 ), SubResource( 15 ) ],
 "loop": false,
 "name": "damaged",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ) ],
+"loop": false,
+"name": "death",
 "speed": 5.0
 } ]
 
@@ -185,7 +185,7 @@ position = Vector2( 700.886, 514.148 )
 shape = SubResource( 26 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 186.76, 228.898 )
+position = Vector2( 205.76, 292.898 )
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 789.273, 307.115 )
